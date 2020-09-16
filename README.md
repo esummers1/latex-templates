@@ -4,7 +4,21 @@ Within are templates for creating different kinds of documents with LaTeX, as we
 
 ## Setup
 
-It is recommended to install LaTeX without the GUI tools and use an editor such as VS Code with the LaTeX Workshop extension.
+It is recommended to install LaTeX without the GUI tools and use an editor such as VS Code with the LaTeX Workshop extension. If you do so, including the following in your workspace settings will be helpful:
+
+```json
+"settings": {
+  "files.exclude": {
+    "**/*.aux": true,
+    "**/*.bbl": true,
+    "**/*.blg": true,
+    "**/*.fdb_latexmk": true,
+    "**/*.fls": true,
+    "**/*.log": true,
+    "**/*.synctex.gz": true
+  },
+}
+```
 
 ### macOS
 

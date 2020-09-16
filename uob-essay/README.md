@@ -12,7 +12,7 @@ tlmgr install bath-bst
 
 ## References
 
-The template expects a `References.bib` file in the same directory, but this can be renamed.
+The template expects a `UoB_References.bib` file in the same directory, but this can be renamed.
 
 ## Citations
 

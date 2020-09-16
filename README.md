@@ -20,7 +20,7 @@ It is recommended to install LaTeX without the GUI tools and use an editor such 
 }
 ```
 
-### macOS
+### macOS Installation
 
 ```bash
 brew cask install mactex-no-gui

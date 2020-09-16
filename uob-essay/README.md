@@ -4,7 +4,7 @@ Created for MSc Computer Science essay assignments.
 
 ## Setup
 
-This makes use of Alex Ball's excellent [Bath Harvard BibTeX style](https://github.com/alex-ball/bathbib). This should be installed as part of a full LaTeX installation as it is available on CTAN, but if it is not:
+This makes use of Alex Ball's excellent [Bath Harvard BibTeX style](https://github.com/alex-ball/bathbib). The BibTeX version should be installed as part of a full LaTeX installation as it is [available on CTAN](https://ctan.org/pkg/bath-bst), but if it is not:
 
 ```bash
 tlmgr install bath-bst

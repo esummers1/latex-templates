@@ -16,16 +16,16 @@ The template expects a `References.bib` file in the same directory, but this can
 
 ## Citations
 
-`bathbib` expects `natbib` citations, whose options are [listed here](https://www.overleaf.com/learn/latex/Natbib_citation_styles), but the common ones are:
+`bathbib` expects `natbib` citations, whose options are [listed here](https://www.overleaf.com/learn/latex/Natbib_citation_styles), but for convenience the common ones are:
 
 > according to **Bird, Smith and Bird (2001)**, this happens when...
 
 ```latex
-\citet{id}
+according to \citet{id}, this happens when...
 ```
 
 > such a claim has been made **(Bird, Smith and Bird (2001))**. In other words...
 
 ```latex
-\citep{id}
+such a claim has been made \citep{id}. In other
 ```

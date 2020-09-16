@@ -1,0 +1,5 @@
+# LaTeX Workshop Artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log

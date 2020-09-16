@@ -1,0 +1,53 @@
+\documentclass[a4paper, 12pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Configuration %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% Front matter
+\title{}
+\author{}
+\date{}
+
+%% Save these values into temporary variables
+\makeatletter
+
+%%%% Define font and line spacing
+\usepackage[rm]{roboto}
+\usepackage{setspace}
+\setstretch{1.35}
+
+%%%% Page styling
+\usepackage[left=4em,right=4em,top=7em,bottom=5em]{geometry}
+\usepackage{fancyhdr, lastpage}
+\pagestyle{fancy}
+
+%% Add title for first page
+\fancypagestyle{first}{
+  \fancyhead[L]{\Large \@title}
+  \fancyhead[C,R]{}
+}
+
+%% Include rules and page numbers on all pages
+\renewcommand{\headrulewidth}{0.75pt}
+\renewcommand{\footrulewidth}{0.75pt}
+\fancyfoot[R]{Page \bf\thepage\ \rm of \bf\pageref{LastPage}}
+\fancyfoot[L,C]{}
+
+%%%% Configure referencing style
+\usepackage{natbib}
+\newcommand*{\urlprefix}{Available from: }
+\newcommand*{\urldateprefix}{Accessed }
+\bibliographystyle{bathx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%% Force the first page's style to our custom one
+\thispagestyle{first}
+
+%%%% Content starts here
+
+%%%% Reference list
+\newpage
+\bibliography{References}
+
+\end{document}

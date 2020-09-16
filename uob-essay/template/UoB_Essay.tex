@@ -27,6 +27,7 @@
 }
 
 %% Include rules and page numbers on all pages
+\fancyhead[L,C,R]{}
 \renewcommand{\headrulewidth}{0.75pt}
 \renewcommand{\footrulewidth}{0.75pt}
 \fancyfoot[R]{Page \bf\thepage\ \rm of \bf\pageref{LastPage}}
@@ -41,13 +42,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-%%%% Force the first page's style to our custom one
+%% Force the first page's style to our custom one
 \thispagestyle{first}
 
 %%%% Content starts here
 
-%%%% Reference list
+
+%%%% Content ends here
+
+%% Reference list
 \newpage
-\bibliography{References}
+\bibliography{UoB_References}
 
 \end{document}

@@ -1,5 +1,11 @@
-# LaTeX Workshop Artifacts
+# LaTeX Workshop artifacts
 *.aux
+*.bbl
+*.blg
 *.fdb_latexmk
 *.fls
 *.log
+*.synctex.gz
+
+# Output documents
+*.pdf

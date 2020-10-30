@@ -1,0 +1,48 @@
+\documentclass[a4paper, 12pt]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Configuration %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% Front matter
+\title{%
+  \Huge Main Title \\
+  \Large Subtitle}
+\author{}
+\date{}
+
+%%%% Enable image insertion
+\usepackage{graphicx}
+
+%%%% Define font and line spacing
+\usepackage{setspace}
+\setstretch{1.2}
+
+%%%% Page styling
+\usepackage[left=7.5em,right=7.5em,top=9em,bottom=10em]{geometry}
+
+%%%% Table styles
+\usepackage{array}
+\newcolumntype{L}[1]{>{\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+%%%% Referencing style
+\usepackage{natbib}
+\renewcommand{\bibname}{References}
+\newcommand*{\urlprefix}{Available from: }
+\newcommand*{\urldateprefix}{Accessed }
+\bibliographystyle{bathx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+%%%% Content starts here
+
+
+%%%% Content ends here
+
+%% Reference list
+\newpage
+\bibliography{UoB_References}
+
+\end{document}

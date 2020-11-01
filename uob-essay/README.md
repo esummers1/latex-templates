@@ -10,6 +10,16 @@ This makes use of Alex Ball's excellent [Bath Harvard BibTeX style](https://gith
 tlmgr install bath-bst
 ```
 
+## Tables
+
+To make use of the custom table styles, reference by letter (e.g. `C`) and supply the size parameter like so:
+
+```latex
+\begin{center}
+  \begin{tabular} { C{0.08\textwidth} L{0.42\textwidth} L{0.42\textwidth} }
+  ...
+```
+
 ## References
 
 The template expects a `UoB_References.bib` file in the same directory, but this can be renamed.

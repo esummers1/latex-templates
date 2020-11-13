@@ -18,7 +18,7 @@
 \setstretch{1.2}
 
 %%%% Page styling
-\usepackage[left=5em,right=5em,top=6em,bottom=8em]{geometry}
+\usepackage[left=7.5em,right=7.5em,top=9em,bottom=9em]{geometry}
 \usepackage{fancyhdr, lastpage}
 \pagestyle{fancy}
 
@@ -32,7 +32,7 @@
   \fancyhead[L]{\LARGE \@title}
   \fancyhead[C,R]{}
   \renewcommand{\headrulewidth}{0.75pt}
-  \setlength{\headsep}{3.5em}
+  \setlength{\headsep}{3em}
 }
 
 %% Define page style thereafter
@@ -45,6 +45,12 @@
 \newcommand*{\urlprefix}{Available from: }
 \newcommand*{\urldateprefix}{Accessed }
 \bibliographystyle{bathx}
+
+%% Make links clickable
+\usepackage[hidelinks]{hyperref}
+
+%% Break links properly over lines
+\def\UrlBreaks{\do\/\do-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}

@@ -15,6 +15,7 @@ It is recommended to install LaTeX without the GUI tools and use an editor such 
     "**/*.fdb_latexmk": true,
     "**/*.fls": true,
     "**/*.log": true,
+    "**/*.out": true,
     "**/*.synctex.gz": true
   }
 }
